@@ -1,0 +1,36 @@
+<html>
+    <body>
+       <head>
+        <link rel="stylesheet" type="text/css" href="03.css" media="screen">
+        <title>Desafio 03 - Alura</title>
+        </head>
+
+        <h1 id = titulo>Mudança de texto do HTML</h1>
+        <p id = "subtitulo"><strong>Desafio de utilizar "textContent" para alterar um parágrafo dentro do HTML.</strong></p> <br>
+        
+        <fieldset>
+            <p id = "explicacaoParagrafo">É possível mudar textos já inseridos no HTML:</p> <br>
+
+            <div>
+                <p id = "paragrafo">Texto original.</p>
+                <button class = "botao" onclick="modificarConteudo()"><strong>Mudar parágrafo</strong></button>
+            </div>
+        </fieldset> <br>
+
+        <fieldset>
+            <p id = "explicacaoTextoInserido">Ou mudar textos personalizados pelo usuário:</p> <br>
+            
+            <div>
+                <label>Insira um texto aqui: </label> <br>
+                <input type="text" name="texto-inserido" id="textoInserido"> 
+            </div>
+            <div id='texto'><span>Seus texto aparecerá aqui.</span></div>
+
+            <button class = "botao" onclick="modificarTextInserido()"><strong>Modificar texto Inserido</strong></button>
+        </fieldset>
+
+
+
+<script src="03.js"></script>
+    </body>
+</html>
